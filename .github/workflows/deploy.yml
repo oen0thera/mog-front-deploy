@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+     - name: print current directory
+       run: pwd
      - name: creates output
        run: sh ./build.sh
      - name: pushing deploy repository
