@@ -12,7 +12,7 @@ jobs:
        run: pwd
      - name: creates output
        run: |
-           ls
+           ls -al
            chmod +x build.sh
            sh ./build.sh
      - name: pushing deploy repository
