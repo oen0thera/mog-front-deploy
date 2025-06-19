@@ -19,7 +19,7 @@ jobs:
      - name: Make script executable
        run: chmod +x ./MOG-Front/build.sh
      - name: Run script
-       run: ./MOG-Front/build.sh
+       run: ./build.sh
      - name: pushing deploy repository
        id: push_directory
        uses: cpina/github-action-push-to-another-repository@main
