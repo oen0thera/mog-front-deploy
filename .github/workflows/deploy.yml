@@ -27,7 +27,7 @@ jobs:
        env:
          API_TOKEN_GITHUB: ${{ secrets.AUTO_ACTIONS }}
        with:
-         source-direcotry: 'output'
+         source-directory: 'output'
          destination-github-username: oen0thera
          destination-repository-name: mog-front-deploy
          user-email: ${{ secrets.EMAIL }}
