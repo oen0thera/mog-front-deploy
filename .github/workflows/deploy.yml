@@ -11,7 +11,10 @@ jobs:
      - name: print current directory
        run: pwd
      - name: creates output
-       run: sh ./build.sh
+       run: |
+           cd MOG-Front
+           chmod +x build.sh
+           sh ./build.sh
      - name: pushing deploy repository
        id: push_directory
        uses: cpina/github-action-push-to-another-repository@main
